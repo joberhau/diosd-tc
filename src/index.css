@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap');
+
+@theme {
+  --font-display: 'Anton', sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --color-club-red: #c8102e;
+  --color-club-red-dark: #8f0b21;
+  --color-club-ink: #101014;
+  --color-club-cream: #f7f5f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-club-cream);
+  color: var(--color-club-ink);
+}
+
+::selection {
+  background: var(--color-club-red);
+  color: white;
+}
