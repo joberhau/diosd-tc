@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset'
+
 export const news = [
   {
     id: 1,
@@ -107,7 +109,7 @@ export const shopItems = [
     id: 1,
     name: 'Hazai mez 2026/27',
     price: '14 990 Ft',
-    image: '/jersey-home.png',
+    image: asset('jersey-home.png'),
     kind: 'photo' as const,
   },
   {
@@ -174,7 +176,7 @@ export const academyGroups = [
     group: 'U9',
     name: 'Csibe csoport',
     schedule: 'Hétfő, szerda 17:30',
-    image: '/utanpotlas-1.png',
+    image: asset('utanpotlas-1.png'),
   },
   {
     id: 3,

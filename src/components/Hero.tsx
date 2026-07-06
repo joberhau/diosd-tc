@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset'
+
 export default function Hero() {
   return (
     <section
@@ -18,7 +20,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-24 text-center">
         <img
-          src="/crest.png"
+          src={asset('crest.png')}
           alt="Diósdi Torna Club"
           className="mx-auto mb-6 h-28 w-28 drop-shadow-2xl sm:h-32 sm:w-32"
         />

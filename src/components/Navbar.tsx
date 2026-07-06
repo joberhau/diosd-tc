@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { asset } from '../lib/asset'
 
 const links = [
   { href: '#hirek', label: 'Hírek' },
@@ -31,7 +32,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-[1600px] items-center justify-between gap-4 px-6 py-4">
         <a href="#" className="flex shrink-0 items-center gap-3">
-          <img src="/crest.png" alt="Diósdi Torna Club" className="h-11 w-11 shrink-0" />
+          <img src={asset('crest.png')} alt="Diósdi Torna Club" className="h-11 w-11 shrink-0" />
           <span className="whitespace-nowrap font-display text-xl tracking-wide text-white">
             DIÓSDI TC
           </span>

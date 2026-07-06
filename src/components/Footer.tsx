@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset'
+
 const socials = [
   {
     label: 'Facebook',
@@ -28,7 +30,7 @@ export default function Footer() {
         <div className="grid gap-10 border-t border-club-ink/10 pt-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-3">
-              <img src="/crest.png" alt="Diósdi Torna Club" className="h-11 w-11" />
+              <img src={asset('crest.png')} alt="Diósdi Torna Club" className="h-11 w-11" />
               <span className="font-display text-xl tracking-wide text-club-ink">
                 DIÓSDI TC
               </span>
